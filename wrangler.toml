@@ -1,16 +1,9 @@
-name = "english-dictionary"
+name = "dictionary"
 compatibility_date = "2024-03-20"
-
-[site]
-bucket = "./dist"
-
-[build]
-command = "bun run build"
-upload.format = "directory"
+main = "src/index.tsx"
 
 [env.production]
-name = "english-dictionary"
-workers_dev = true
+name = "dictionary"
 
 [env.production.vars]
-ENVIRONMENT = "production" 
+ENVIRONMENT = "production"

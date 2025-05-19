@@ -45,7 +45,7 @@ export default function WordDefinition({ word, onSaveToHistory }: WordDefinition
             setSaved(false);
 
             try {
-                const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+                const response = await fetch(`/api/${word}`);
                 if (!response.ok) {
                     throw new Error('Word not found');
                 }
