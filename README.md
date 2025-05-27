@@ -27,3 +27,13 @@ Preview the production build locally:
 ```bash
 pnpm preview
 ```
+
+## Deployment
+
+Deploy to Cloudflare Pages with Functions:
+
+```bash
+pnpm deploy
+```
+
+This will deploy both the static frontend and the API backend functions to Cloudflare Pages.

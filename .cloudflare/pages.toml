@@ -1,0 +1,13 @@
+# Cloudflare Pages configuration
+[build]
+command = "bun run build"
+
+[build.environment]
+NODE_VERSION = "22"
+
+[site]
+bucket = "./dist"
+
+# Function configuration
+[functions]
+directory = "functions"

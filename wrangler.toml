@@ -1,6 +1,18 @@
+# This file configures both the Worker and Pages behaviors
 name = "dictionary"
 compatibility_date = "2024-03-20"
-main = "src/index.tsx"
+
+# Pages specific configuration
+[site]
+bucket = "./dist"
+
+[build]
+command = "rsbuild build"
+output_dir = "dist"
+
+# Functions configuration
+[build.upload]
+format = "service-worker"
 
 [env.production]
 name = "dictionary"
